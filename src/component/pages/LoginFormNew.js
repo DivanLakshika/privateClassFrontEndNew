@@ -17,7 +17,7 @@ const handleSubmit = async (e) => {
 
   // Send data to the backend for authentication
   try{
-  const response = await fetch('http://http://35.227.150.39:8080/teacher/login', {
+  const response = await fetch('http://35.227.150.39:8080/teacher/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
