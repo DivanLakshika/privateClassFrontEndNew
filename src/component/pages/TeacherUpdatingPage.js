@@ -19,7 +19,7 @@ const TeacherUpdatingPage=()=>{
   const handleInputUpdate=async(e)=>{
     e.preventDefault()
 
-  const response = await fetch(`http://http://35.227.150.39:8080/teacher/${teacherId}/save`, {
+  const response = await fetch(`http://35.227.150.39:8080/teacher/${teacherId}/save`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
