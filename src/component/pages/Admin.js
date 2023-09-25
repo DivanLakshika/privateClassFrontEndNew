@@ -8,7 +8,7 @@ function Admin() {
 
   useEffect(() => {
     // Fetch teacher data from the Spring Boot API
-    fetch('http://localhost:8080/teacher/getAll') // Replace with your actual API endpoint
+    fetch('http://http://35.227.150.39:8080/teacher/getAll') // Replace with your actual API endpoint
       .then((response) => response.json())
       .then((data) => setTeachers(data))
       .catch((error) => console.error('Error fetching data:', error));
@@ -16,7 +16,7 @@ function Admin() {
 
   const handleDelete = (teacherId) => {
     // Send a DELETE request to your backend API to delete the teacher
-    fetch(`http://localhost:8080/teacher/${teacherId}/delete`, {
+    fetch(`http://http://35.227.150.39:8080/teacher/${teacherId}/delete`, {
       method: 'DELETE',
     })
       .then((response) => {
