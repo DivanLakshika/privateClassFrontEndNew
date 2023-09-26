@@ -44,7 +44,7 @@ const StudentAdding = () => {
   const handleInputChange2=async(e)=>{
     e.preventDefault()
 
-  const response = await fetch(`http://localhost:8080/teacher/${teacherIdReceivedToStudentAdding}/student`, {
+  const response = await fetch(`http://35.227.150.39:8080/teacher/${teacherIdReceivedToStudentAdding}/student`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

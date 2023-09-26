@@ -41,7 +41,7 @@ const Registration = () => {
   const handleInputChange=async(e)=>{
     e.preventDefault()
 
-  const response = await fetch('http://localhost:8080/teacher/add', {
+  const response = await fetch('http://35.227.150.39:8080/teacher/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
