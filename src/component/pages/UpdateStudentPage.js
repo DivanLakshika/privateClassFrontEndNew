@@ -15,7 +15,7 @@ function UpdateStudentPage() {
   const handleInputChange3=async(e)=>{
     e.preventDefault()
 
-  const response = await fetch(`http://35.227.150.39:8080/student/${id}/save`, {
+  const response = await fetch(`http://localhost:8080/student/${id}/save`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

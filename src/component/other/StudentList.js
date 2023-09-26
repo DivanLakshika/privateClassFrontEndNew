@@ -7,7 +7,7 @@ import { useState } from 'react';
 const StudentList = () => {
   const[students,setStudents]=useState([]);
   React.useEffect(()=>{
-    fetch("http://localhost:8080/teacher/{teacherId}/students")
+    fetch("http://localhost:8080/teacher/{teacherId}/students") //'http://35.227.150.39:8080/
     .then((response)=>(response).json())
     .then((data)=>
       setStudents(data))

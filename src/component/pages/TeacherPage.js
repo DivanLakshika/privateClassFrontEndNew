@@ -12,7 +12,7 @@ function TeacherPage() {
   const handleDelete = async (id) => {
     try {
      
-      const response = await fetch(`http://35.227.150.39:8080/student/${id}/delete`, {
+      const response = await fetch(`http://localhost:8080/student/${id}/delete`, {
         method: 'DELETE',
       });
       if (response.ok) {
@@ -44,7 +44,7 @@ function TeacherPage() {
     // Fetch customer-specific data based on customerId from the backend
     async function fetchCustomerData() {
       try {
-        const response = await fetch(`http://35.227.150.39:8080/${teacherIdReceived}/students`);
+        const response = await fetch(`http://localhost:8080/teacher/${teacherIdReceived}/students`);
         if (response.ok) {
           const data = await response.json();
           setCustomerData(data);
